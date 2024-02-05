@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90D1CFE42B7177C70004CC74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D1CFE32B7177C70004CC74 /* AppDelegate.swift */; };
+		90D1CFE62B7177C70004CC74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D1CFE52B7177C70004CC74 /* SceneDelegate.swift */; };
+		90D1CFE92B7177C70004CC74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFE72B7177C70004CC74 /* LaunchScreen.storyboard */; };
+		90D1CFEC2B7177C70004CC74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFEA2B7177C70004CC74 /* Main.storyboard */; };
+		90D1CFF52B7177C70004CC74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D1CFF42B7177C70004CC74 /* AppDelegate.swift */; };
+		90D1CFF82B7177C70004CC74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFF62B7177C70004CC74 /* Main.storyboard */; };
+		90D1CFFF2B7177C70004CC74 /* SilentTube Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 90D1CFFE2B7177C70004CC74 /* SilentTube Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90D1D0092B7177C70004CC74 /* SilentTube Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 90D1D0082B7177C70004CC74 /* SilentTube Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90D1D00F2B7177C70004CC74 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFCA2B7177C50004CC74 /* Main.html */; };
+		90D1D0102B7177C70004CC74 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFCA2B7177C50004CC74 /* Main.html */; };
+		90D1D0112B7177C70004CC74 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFCC2B7177C50004CC74 /* Icon.png */; };
+		90D1D0122B7177C70004CC74 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFCC2B7177C50004CC74 /* Icon.png */; };
+		90D1D0132B7177C70004CC74 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFCD2B7177C50004CC74 /* Style.css */; };
+		90D1D0142B7177C70004CC74 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFCD2B7177C50004CC74 /* Style.css */; };
+		90D1D0152B7177C70004CC74 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFCE2B7177C50004CC74 /* Script.js */; };
+		90D1D0162B7177C70004CC74 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFCE2B7177C50004CC74 /* Script.js */; };
+		90D1D0172B7177C70004CC74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D1CFCF2B7177C50004CC74 /* ViewController.swift */; };
+		90D1D0182B7177C70004CC74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D1CFCF2B7177C50004CC74 /* ViewController.swift */; };
+		90D1D0192B7177C70004CC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD02B7177C70004CC74 /* Assets.xcassets */; };
+		90D1D01A2B7177C70004CC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD02B7177C70004CC74 /* Assets.xcassets */; };
+		90D1D01B2B7177C70004CC74 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D1CFD22B7177C70004CC74 /* SafariWebExtensionHandler.swift */; };
+		90D1D01C2B7177C70004CC74 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D1CFD22B7177C70004CC74 /* SafariWebExtensionHandler.swift */; };
+		90D1D01D2B7177C70004CC74 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD42B7177C70004CC74 /* _locales */; };
+		90D1D01E2B7177C70004CC74 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD42B7177C70004CC74 /* _locales */; };
+		90D1D01F2B7177C70004CC74 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD52B7177C70004CC74 /* images */; };
+		90D1D0202B7177C70004CC74 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD52B7177C70004CC74 /* images */; };
+		90D1D0212B7177C70004CC74 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD62B7177C70004CC74 /* manifest.json */; };
+		90D1D0222B7177C70004CC74 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD62B7177C70004CC74 /* manifest.json */; };
+		90D1D0232B7177C70004CC74 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD72B7177C70004CC74 /* background.js */; };
+		90D1D0242B7177C70004CC74 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD72B7177C70004CC74 /* background.js */; };
+		90D1D0252B7177C70004CC74 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD82B7177C70004CC74 /* content.js */; };
+		90D1D0262B7177C70004CC74 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD82B7177C70004CC74 /* content.js */; };
+		90D1D0272B7177C70004CC74 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD92B7177C70004CC74 /* popup.html */; };
+		90D1D0282B7177C70004CC74 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFD92B7177C70004CC74 /* popup.html */; };
+		90D1D0292B7177C70004CC74 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFDA2B7177C70004CC74 /* popup.css */; };
+		90D1D02A2B7177C70004CC74 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFDA2B7177C70004CC74 /* popup.css */; };
+		90D1D02B2B7177C70004CC74 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFDB2B7177C70004CC74 /* popup.js */; };
+		90D1D02C2B7177C70004CC74 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 90D1CFDB2B7177C70004CC74 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90D1D0002B7177C70004CC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D1CFC42B7177C50004CC74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D1CFFD2B7177C70004CC74;
+			remoteInfo = "SilentTube Extension (iOS)";
+		};
+		90D1D00A2B7177C70004CC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D1CFC42B7177C50004CC74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D1D0072B7177C70004CC74;
+			remoteInfo = "SilentTube Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90D1D0322B7177C70004CC74 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				90D1CFFF2B7177C70004CC74 /* SilentTube Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1D0392B7177C70004CC74 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				90D1D0092B7177C70004CC74 /* SilentTube Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		90D1CFCB2B7177C50004CC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		90D1CFCC2B7177C50004CC74 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		90D1CFCD2B7177C50004CC74 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		90D1CFCE2B7177C50004CC74 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		90D1CFCF2B7177C50004CC74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90D1CFD02B7177C70004CC74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90D1CFD22B7177C70004CC74 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		90D1CFD42B7177C70004CC74 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		90D1CFD52B7177C70004CC74 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		90D1CFD62B7177C70004CC74 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		90D1CFD72B7177C70004CC74 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		90D1CFD82B7177C70004CC74 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		90D1CFD92B7177C70004CC74 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		90D1CFDA2B7177C70004CC74 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		90D1CFDB2B7177C70004CC74 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		90D1CFE02B7177C70004CC74 /* SilentTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D1CFE32B7177C70004CC74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90D1CFE52B7177C70004CC74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		90D1CFE82B7177C70004CC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90D1CFEB2B7177C70004CC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90D1CFED2B7177C70004CC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D1CFF22B7177C70004CC74 /* SilentTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D1CFF42B7177C70004CC74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90D1CFF72B7177C70004CC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90D1CFF92B7177C70004CC74 /* SilentTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilentTube.entitlements; sourceTree = "<group>"; };
+		90D1CFFE2B7177C70004CC74 /* SilentTube Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SilentTube Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D1D0032B7177C70004CC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D1D0082B7177C70004CC74 /* SilentTube Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SilentTube Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D1D00D2B7177C70004CC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D1D00E2B7177C70004CC74 /* SilentTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilentTube.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90D1CFDD2B7177C70004CC74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1CFEF2B7177C70004CC74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1CFFB2B7177C70004CC74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1D0052B7177C70004CC74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90D1CFC32B7177C50004CC74 = {
+			isa = PBXGroup;
+			children = (
+				90D1CFC82B7177C50004CC74 /* Shared (App) */,
+				90D1CFD12B7177C70004CC74 /* Shared (Extension) */,
+				90D1CFE22B7177C70004CC74 /* iOS (App) */,
+				90D1CFF32B7177C70004CC74 /* macOS (App) */,
+				90D1D0022B7177C70004CC74 /* iOS (Extension) */,
+				90D1D00C2B7177C70004CC74 /* macOS (Extension) */,
+				90D1CFE12B7177C70004CC74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90D1CFC82B7177C50004CC74 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				90D1CFCF2B7177C50004CC74 /* ViewController.swift */,
+				90D1CFD02B7177C70004CC74 /* Assets.xcassets */,
+				90D1CFC92B7177C50004CC74 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		90D1CFC92B7177C50004CC74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90D1CFCA2B7177C50004CC74 /* Main.html */,
+				90D1CFCC2B7177C50004CC74 /* Icon.png */,
+				90D1CFCD2B7177C50004CC74 /* Style.css */,
+				90D1CFCE2B7177C50004CC74 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90D1CFD12B7177C70004CC74 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				90D1CFD22B7177C70004CC74 /* SafariWebExtensionHandler.swift */,
+				90D1CFD32B7177C70004CC74 /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		90D1CFD32B7177C70004CC74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90D1CFD42B7177C70004CC74 /* _locales */,
+				90D1CFD52B7177C70004CC74 /* images */,
+				90D1CFD62B7177C70004CC74 /* manifest.json */,
+				90D1CFD72B7177C70004CC74 /* background.js */,
+				90D1CFD82B7177C70004CC74 /* content.js */,
+				90D1CFD92B7177C70004CC74 /* popup.html */,
+				90D1CFDA2B7177C70004CC74 /* popup.css */,
+				90D1CFDB2B7177C70004CC74 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90D1CFE12B7177C70004CC74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90D1CFE02B7177C70004CC74 /* SilentTube.app */,
+				90D1CFF22B7177C70004CC74 /* SilentTube.app */,
+				90D1CFFE2B7177C70004CC74 /* SilentTube Extension.appex */,
+				90D1D0082B7177C70004CC74 /* SilentTube Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90D1CFE22B7177C70004CC74 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				90D1CFE32B7177C70004CC74 /* AppDelegate.swift */,
+				90D1CFE52B7177C70004CC74 /* SceneDelegate.swift */,
+				90D1CFE72B7177C70004CC74 /* LaunchScreen.storyboard */,
+				90D1CFEA2B7177C70004CC74 /* Main.storyboard */,
+				90D1CFED2B7177C70004CC74 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		90D1CFF32B7177C70004CC74 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				90D1CFF42B7177C70004CC74 /* AppDelegate.swift */,
+				90D1CFF62B7177C70004CC74 /* Main.storyboard */,
+				90D1CFF92B7177C70004CC74 /* SilentTube.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		90D1D0022B7177C70004CC74 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				90D1D0032B7177C70004CC74 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		90D1D00C2B7177C70004CC74 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				90D1D00D2B7177C70004CC74 /* Info.plist */,
+				90D1D00E2B7177C70004CC74 /* SilentTube.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90D1CFDF2B7177C70004CC74 /* SilentTube (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D1D0332B7177C70004CC74 /* Build configuration list for PBXNativeTarget "SilentTube (iOS)" */;
+			buildPhases = (
+				90D1CFDC2B7177C70004CC74 /* Sources */,
+				90D1CFDD2B7177C70004CC74 /* Frameworks */,
+				90D1CFDE2B7177C70004CC74 /* Resources */,
+				90D1D0322B7177C70004CC74 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90D1D0012B7177C70004CC74 /* PBXTargetDependency */,
+			);
+			name = "SilentTube (iOS)";
+			productName = "SilentTube (iOS)";
+			productReference = 90D1CFE02B7177C70004CC74 /* SilentTube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90D1CFF12B7177C70004CC74 /* SilentTube (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D1D03A2B7177C70004CC74 /* Build configuration list for PBXNativeTarget "SilentTube (macOS)" */;
+			buildPhases = (
+				90D1CFEE2B7177C70004CC74 /* Sources */,
+				90D1CFEF2B7177C70004CC74 /* Frameworks */,
+				90D1CFF02B7177C70004CC74 /* Resources */,
+				90D1D0392B7177C70004CC74 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90D1D00B2B7177C70004CC74 /* PBXTargetDependency */,
+			);
+			name = "SilentTube (macOS)";
+			productName = "SilentTube (macOS)";
+			productReference = 90D1CFF22B7177C70004CC74 /* SilentTube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90D1CFFD2B7177C70004CC74 /* SilentTube Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D1D02F2B7177C70004CC74 /* Build configuration list for PBXNativeTarget "SilentTube Extension (iOS)" */;
+			buildPhases = (
+				90D1CFFA2B7177C70004CC74 /* Sources */,
+				90D1CFFB2B7177C70004CC74 /* Frameworks */,
+				90D1CFFC2B7177C70004CC74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SilentTube Extension (iOS)";
+			productName = "SilentTube Extension (iOS)";
+			productReference = 90D1CFFE2B7177C70004CC74 /* SilentTube Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		90D1D0072B7177C70004CC74 /* SilentTube Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D1D0362B7177C70004CC74 /* Build configuration list for PBXNativeTarget "SilentTube Extension (macOS)" */;
+			buildPhases = (
+				90D1D0042B7177C70004CC74 /* Sources */,
+				90D1D0052B7177C70004CC74 /* Frameworks */,
+				90D1D0062B7177C70004CC74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SilentTube Extension (macOS)";
+			productName = "SilentTube Extension (macOS)";
+			productReference = 90D1D0082B7177C70004CC74 /* SilentTube Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90D1CFC42B7177C50004CC74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					90D1CFDF2B7177C70004CC74 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					90D1CFF12B7177C70004CC74 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					90D1CFFD2B7177C70004CC74 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					90D1D0072B7177C70004CC74 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 90D1CFC72B7177C50004CC74 /* Build configuration list for PBXProject "SilentTube" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90D1CFC32B7177C50004CC74;
+			productRefGroup = 90D1CFE12B7177C70004CC74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90D1CFDF2B7177C70004CC74 /* SilentTube (iOS) */,
+				90D1CFF12B7177C70004CC74 /* SilentTube (macOS) */,
+				90D1CFFD2B7177C70004CC74 /* SilentTube Extension (iOS) */,
+				90D1D0072B7177C70004CC74 /* SilentTube Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90D1CFDE2B7177C70004CC74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D1D0112B7177C70004CC74 /* Icon.png in Resources */,
+				90D1CFE92B7177C70004CC74 /* LaunchScreen.storyboard in Resources */,
+				90D1D00F2B7177C70004CC74 /* Main.html in Resources */,
+				90D1D0152B7177C70004CC74 /* Script.js in Resources */,
+				90D1D0192B7177C70004CC74 /* Assets.xcassets in Resources */,
+				90D1CFEC2B7177C70004CC74 /* Main.storyboard in Resources */,
+				90D1D0132B7177C70004CC74 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1CFF02B7177C70004CC74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D1D0122B7177C70004CC74 /* Icon.png in Resources */,
+				90D1D0142B7177C70004CC74 /* Style.css in Resources */,
+				90D1CFF82B7177C70004CC74 /* Main.storyboard in Resources */,
+				90D1D0162B7177C70004CC74 /* Script.js in Resources */,
+				90D1D01A2B7177C70004CC74 /* Assets.xcassets in Resources */,
+				90D1D0102B7177C70004CC74 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1CFFC2B7177C70004CC74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D1D0232B7177C70004CC74 /* background.js in Resources */,
+				90D1D0292B7177C70004CC74 /* popup.css in Resources */,
+				90D1D0272B7177C70004CC74 /* popup.html in Resources */,
+				90D1D01F2B7177C70004CC74 /* images in Resources */,
+				90D1D0212B7177C70004CC74 /* manifest.json in Resources */,
+				90D1D01D2B7177C70004CC74 /* _locales in Resources */,
+				90D1D0252B7177C70004CC74 /* content.js in Resources */,
+				90D1D02B2B7177C70004CC74 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1D0062B7177C70004CC74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D1D0242B7177C70004CC74 /* background.js in Resources */,
+				90D1D02A2B7177C70004CC74 /* popup.css in Resources */,
+				90D1D0282B7177C70004CC74 /* popup.html in Resources */,
+				90D1D0202B7177C70004CC74 /* images in Resources */,
+				90D1D0222B7177C70004CC74 /* manifest.json in Resources */,
+				90D1D01E2B7177C70004CC74 /* _locales in Resources */,
+				90D1D0262B7177C70004CC74 /* content.js in Resources */,
+				90D1D02C2B7177C70004CC74 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90D1CFDC2B7177C70004CC74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D1D0172B7177C70004CC74 /* ViewController.swift in Sources */,
+				90D1CFE42B7177C70004CC74 /* AppDelegate.swift in Sources */,
+				90D1CFE62B7177C70004CC74 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1CFEE2B7177C70004CC74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D1D0182B7177C70004CC74 /* ViewController.swift in Sources */,
+				90D1CFF52B7177C70004CC74 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1CFFA2B7177C70004CC74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D1D01B2B7177C70004CC74 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D1D0042B7177C70004CC74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D1D01C2B7177C70004CC74 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90D1D0012B7177C70004CC74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90D1CFFD2B7177C70004CC74 /* SilentTube Extension (iOS) */;
+			targetProxy = 90D1D0002B7177C70004CC74 /* PBXContainerItemProxy */;
+		};
+		90D1D00B2B7177C70004CC74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90D1D0072B7177C70004CC74 /* SilentTube Extension (macOS) */;
+			targetProxy = 90D1D00A2B7177C70004CC74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90D1CFCA2B7177C50004CC74 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D1CFCB2B7177C50004CC74 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		90D1CFE72B7177C70004CC74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D1CFE82B7177C70004CC74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		90D1CFEA2B7177C70004CC74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D1CFEB2B7177C70004CC74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90D1CFF62B7177C70004CC74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D1CFF72B7177C70004CC74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90D1D02D2B7177C70004CC74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90D1D02E2B7177C70004CC74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		90D1D0302B7177C70004CC74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SilentTube Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MikeMichael.SilentTube.Extension;
+				PRODUCT_NAME = "SilentTube Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90D1D0312B7177C70004CC74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SilentTube Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MikeMichael.SilentTube.Extension;
+				PRODUCT_NAME = "SilentTube Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90D1D0342B7177C70004CC74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SilentTube;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MikeMichael.SilentTube;
+				PRODUCT_NAME = SilentTube;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90D1D0352B7177C70004CC74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SilentTube;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MikeMichael.SilentTube;
+				PRODUCT_NAME = SilentTube;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90D1D0372B7177C70004CC74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/SilentTube.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SilentTube Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MikeMichael.SilentTube.Extension;
+				PRODUCT_NAME = "SilentTube Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		90D1D0382B7177C70004CC74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/SilentTube.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SilentTube Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MikeMichael.SilentTube.Extension;
+				PRODUCT_NAME = "SilentTube Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		90D1D03B2B7177C70004CC74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/SilentTube.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SilentTube;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MikeMichael.SilentTube;
+				PRODUCT_NAME = SilentTube;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		90D1D03C2B7177C70004CC74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/SilentTube.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626XV358Y5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SilentTube;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MikeMichael.SilentTube;
+				PRODUCT_NAME = SilentTube;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90D1CFC72B7177C50004CC74 /* Build configuration list for PBXProject "SilentTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D1D02D2B7177C70004CC74 /* Debug */,
+				90D1D02E2B7177C70004CC74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D1D02F2B7177C70004CC74 /* Build configuration list for PBXNativeTarget "SilentTube Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D1D0302B7177C70004CC74 /* Debug */,
+				90D1D0312B7177C70004CC74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D1D0332B7177C70004CC74 /* Build configuration list for PBXNativeTarget "SilentTube (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D1D0342B7177C70004CC74 /* Debug */,
+				90D1D0352B7177C70004CC74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D1D0362B7177C70004CC74 /* Build configuration list for PBXNativeTarget "SilentTube Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D1D0372B7177C70004CC74 /* Debug */,
+				90D1D0382B7177C70004CC74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D1D03A2B7177C70004CC74 /* Build configuration list for PBXNativeTarget "SilentTube (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D1D03B2B7177C70004CC74 /* Debug */,
+				90D1D03C2B7177C70004CC74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90D1CFC42B7177C50004CC74 /* Project object */;
+}
