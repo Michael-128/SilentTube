@@ -14,13 +14,10 @@
         "512": "images/icon-512.png"
     },
 
-    "background": {
-        "service_worker": "background.js"
-    },
-
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": [ "*://*.youtube.com/*" ],
+        "run_at": "document_idle"
     }],
 
     "action": {
