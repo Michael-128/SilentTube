@@ -14,16 +14,13 @@
         "512": "images/icon-512.png"
     },
 
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
-    },
-
     "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "*://*.youtube.com/*" ],
-        "run_at": "document_idle"
+        "js": [ 
+            "js/style-storage.js",
+            "js/style-injector.js",
+            "content.js"
+        ],
+        "matches": [ "*://*.youtube.com/*" ]
     }],
 
     "action": {
@@ -38,5 +35,7 @@
         }
     },
 
-    "permissions": [ ]
+    "permissions": [ 
+        "storage"
+    ]
 }
