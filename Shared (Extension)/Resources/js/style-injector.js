@@ -6,16 +6,29 @@ class StyleInjector {
     }
 
     async _init() {
+        // Tabs
         this._hideHomeTab = await styleStorage.getHideHomeTab()
         this._hideShortsTab = await styleStorage.getHideShortsTab()
         this._hideSubscriptionsTab = await styleStorage.getHideSubscriptionsTab()
         this._hideYouTubeMusicTab = await styleStorage.getHideYouTubeMusicTab()
         this._hideYouTab = await styleStorage.getHideYouTab()
 
+        // Menus
+        this._hideLibraryMenu = await styleStorage.getHideLibraryMenu()
+        this._hideSubscriptionsMenu = await styleStorage.getHideSubscriptionsMenu()
+        this._hideExploreMenu = await styleStorage.getHideExploreMenu()
+        this._hideMoreMenu = await styleStorage.getHideMoreMenu()
+        this._hideSettingsMenu = await styleStorage.getHideSettingsMenu()
+
+        // Other
+        this._hideFooter = await styleStorage.getHideFooter()
+        this._redirectSubscriptionsTab = await styleStorage.getRedirectSubscriptionsTab()
+
         document.head.appendChild(this.styleElement)
         this.reload()
     }
 
+    // Tabs
     _hideHomeTab = false
     setHideHomeTab(value) { this._hideHomeTab = value; this.reload(); styleStorage.setHideHomeTab(value) }
 
@@ -31,11 +44,35 @@ class StyleInjector {
     _hideYouTab = false
     setHideYouTab(value) { this._hideYouTab = value; this.reload(); styleStorage.setHideYouTab(value) }
 
-    _home = ['a[title="Home"]', 'ytd-browse[page-subtype="home"]']
-    _shorts = ['a[title="Shorts"]', 'ytd-shorts']
-    _subscriptions = ['a[title="Subscriptions"]', 'ytd-browse[page-subtype="subscriptions"]']
+    // Menus
+    _hideLibraryMenu = false
+    setHideLibraryMenu() { this._hideLibraryMenu = value; this.reload(); styleStorage.setHideLibraryMenu() }
+
+    _hideSubscriptionsMenu = false
+    setHideSubscriptionsMenu() { this._hideSubscriptionsMenu = value; this.reload(); styleStorage.setHideSubscriptionsMenu() }
+
+    _hideExploreMenu = false
+    setHideExploreMenu() { this._hideExploreMenu = value; this.reload(); styleStorage.setHideExploreMenu() }
+
+    _hideMoreMenu = false
+    setHideMoreMenu() { this._hideMoreMenu = value; this.reload(); styleStorage.setHideMoreMenu() }
+
+    _hideSettingsMenu = false
+    setHideSettingsMenu() { this._hideSettingsMenu = value; this.reload(); styleStorage.setHideSettingsMenu() }
+
+
+    // Other
+    _hideFooter = false
+    setHideFooter() { this._hideFooter = value; this.reload(); styleStorage.setHideFooter() }
+
+    _redirectSubscriptionsTab = false
+    setRedirectSubscriptionsTab(value) { this._redirectSubscriptionsTab = value; this.reload(); styleStorage.setRedirectSubscriptionsTab(value) }
+
+    _home = ['a[title="Home"]', 'ytd-browse[page-subtype="home"]', 'ytm-pivot-bar-item-renderer:has(> div.pivot-w2w)']
+    _shorts = ['a[title="Shorts"]', 'ytd-shorts', 'ytm-pivot-bar-item-renderer:has(> div.pivot-shorts)']
+    _subscriptions = ['a[title="Subscriptions"]', 'ytd-browse[page-subtype="subscriptions"]', 'ytm-pivot-bar-item-renderer:has(> div.pivot-subs)']
     _youTubeMusic = ['a[title="YouTube Music"]']
-    _you = ['a[title="You"]']
+    _you = ['a[title="You"]', 'ytm-pivot-bar-item-renderer:has(> div.pivot-library)']
 
     _resetInnerHTML () {
         this.styleElement.innerHTML = ""
@@ -77,6 +114,13 @@ class StyleInjector {
 
     reload() {
         this._buildStyleSheet()
+
+        console.log(window.location.pathname === "/", window.location.origin)
+
+        if(this._redirectSubscriptionsTab && window.location.pathname === "/") {
+            console.log("x")
+            window.location.replace(window.location.origin+"/feed/subscriptions")
+        }
     }
 }
 
